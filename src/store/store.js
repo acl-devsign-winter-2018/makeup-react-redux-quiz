@@ -10,6 +10,28 @@ const reducer = combineReducers({
 
 const store = createStore(
   reducer,
+  {
+    pets: [
+      {
+        name: 'Dingo',
+        id: 111,
+        animal: 'dog',
+        description: 'the nicest one'
+      },
+      {
+        name: 'Dagger',
+        id: 112,
+        animal: 'dog',
+        description: 'the second nicest one'
+      },
+      {
+        name: 'Telulah',
+        id: 113,
+        animal: 'rat',
+        description: 'ratty'
+      }
+    ]
+  },
   window.__REDUX_DEVTOOLS_EXTENSION_ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 

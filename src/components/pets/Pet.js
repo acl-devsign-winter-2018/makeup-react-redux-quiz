@@ -3,11 +3,6 @@ import { connect } from 'react-redux';
 
 class Pet extends Component {
 
-
-  // componentDidMount() {
-  //   this.props.loadSupplies();
-  // }
-
   render() {
     const { name, animal, description } = this.props;
     return (

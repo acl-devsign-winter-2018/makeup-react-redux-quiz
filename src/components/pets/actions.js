@@ -1,13 +1,6 @@
 import { PET_ADD, PET_DELETE } from './reducers';
 import shortid from 'shortid';
 
-// export function loadPets() {
-//   return dispatch => {
-//     type: PETS_LOAD,
-//     payload: pets
-//   };
-// }
-
 export function addPet(pet){
   pet.id = shortid();
   return {
