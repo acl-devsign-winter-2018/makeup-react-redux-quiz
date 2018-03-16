@@ -1,10 +1,11 @@
 import { createStore, combineReducers, compose, applyMiddleware } from 'redux';
-import Home from '../components/Home';
+import Pet from '../components/Pet';
+import Pets from '../components/Pets';
 import thunk from 'redux-thunk';
 import promiseMiddleware from './promiseMiddleware';
 
 const reducer = combineReducers({
-  // listed reducers
+  
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
