@@ -7,8 +7,8 @@ export default class AddForm extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     this.props.onEdit(event.target.elements.name.value);
-    this.props.onEdit(event.target.elements.animal.value);
-    this.props.onEdit(event.target.elements.description.value);
+    // this.props.onEdit(event.target.elements.animal.value);
+    // this.props.onEdit(event.target.elements.description.value);
   };
 
   render() {
