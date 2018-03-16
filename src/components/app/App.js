@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PetForm from '../pet/PetForm';
+import Pets from '../pet/Pets';
+import Pet from '../pet/Pet';
 
 
 
-export default class App extends Component {
+class App extends Component {
 
 
   render() {
@@ -16,11 +18,11 @@ export default class App extends Component {
         <main id="main" role="main">
           <div><p>HELLO</p></div>
           {/* <div><PetForm/></div> */}
-          {/* <Switch> */}
-          {/* <Route exact path="/" component={PetForm}/> */}
-          {/* <Route path="/pets/:id" component={Images}/>
-        <Redirect to="/"/>  */}
-          {/* </Switch> */}
+          <Switch>
+            <Route exact path="/" component={Pets}/>
+            <Route path="/pets/:id" component={Pet}/>
+            <Redirect to="/"/>
+          </Switch>
 
         </main>
  
@@ -29,5 +31,7 @@ export default class App extends Component {
   }
 }
 
-
+// export default connect(
+//   null, { PetForm }
+// )(App);
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addPet } from './actions';
-// import Pet from './Pet';
+import Pet from './Pet';
 import PetForm from './PetForm';
 // loadPets
 
@@ -17,10 +17,10 @@ class Pets extends Component {
         </section>
 
         <section className="grid">
-          {/* <ul>
+          <ul>
             {pets &&
-          pets.map((pet, i) => <Pet key={i} {...pet} petId={this.props.id}/>)}
-          </ul> */}
+          pets.map((pet, i) => <Pet key={i} {...pet} id={this.props.id}/>)}
+          </ul>
         </section>
       </div>
     );
