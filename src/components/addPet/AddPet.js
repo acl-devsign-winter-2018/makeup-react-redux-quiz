@@ -15,6 +15,7 @@ export default class AddForm extends Component {
 
     return (
       <div>
+        <h2>Add A Pet</h2>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="name">
             Pet's name: <input name="name"/>
