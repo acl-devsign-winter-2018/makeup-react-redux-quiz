@@ -1,10 +1,11 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
+import { removePet } from './actions';
 
 class Pet extends Component {
 
   render() {
-    const { name, animal, description } = this.props;
+    const { name, animal, description, removePet } = this.props;
     return (
       <div>
         <Fragment>
@@ -12,6 +13,7 @@ class Pet extends Component {
             <h3>{name}</h3>
             <p>{animal}</p>
             <p>{description}</p>
+            <button onClick={removePet}>X</button>
           </li>
         </Fragment>
       </div>
@@ -21,5 +23,5 @@ class Pet extends Component {
 
 export default connect(
   state => ({ pets: state.pets }),
-  null
+  { removePet }
 )(Pet);

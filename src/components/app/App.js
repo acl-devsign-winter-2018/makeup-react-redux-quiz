@@ -15,13 +15,14 @@ class App extends Component {
             <nav>
               <ul>
                 <li><Link to="/">Home</Link></li>
-                {/* <li><Link to="/">Home</Link></li> */}
+                <li><Link to="/pets">My Pets</Link></li>
               </ul>
             </nav>
           </header>
           <main id="main" role="main">
             <Switch>
               <Route exact path="/" component={Pets}/>
+              <Route exact path="/pets" component={Pets}/>
               <Redirect to="/"/>
             </Switch>
           </main>

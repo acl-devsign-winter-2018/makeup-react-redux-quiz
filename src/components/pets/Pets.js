@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-import { loadPets, addPet } from './actions';
+import { addPet } from './actions';
 import AddPet from '../addPet/AddPet';
 import Pet from './Pet';
 
@@ -24,5 +24,5 @@ class Pets extends Component {
 
 export default connect(
   state => ({ pets: state.pets }),
-  { loadPets, addPet }
+  { addPet }
 )(Pets);
