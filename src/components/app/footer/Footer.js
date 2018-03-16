@@ -7,7 +7,7 @@ export default class Footer extends Component {
     return (
       <footer role="contentinfo" id="footer">
         <section className="footer maxwidth-wrap"> 
-          <p>(c) <a href="https://github.com/limongoo/" target="_blank" rel="author noopener noreferrer">Blank App</a> | <a href="https://github.com/limongoo" target="_blank" rel="author noopener noreferrer">Ivan Limongan</a></p>
+          <p>(c) <a href="https://github.com/limongoo/" target="_blank" rel="author noopener noreferrer">Pets App</a> | <a href="https://github.com/limongoo" target="_blank" rel="author noopener noreferrer">Ivan Limongan</a></p>
         </section>
       </footer>
     );

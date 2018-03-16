@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 import './App.css';
 import Header from './header/Header';
 import Footer from './footer/Footer';
-import Home from '../home/Home';
-
+import Pets from '../pet/Pets';
+import PetDetail from '../pet/PetDetail';
 
 export default class App extends Component {
 
@@ -18,9 +18,8 @@ export default class App extends Component {
             <Header/>
             <main role="main" id="main">
               <Switch>
-                <Route exact path="/" component={Home}/>
-                {/* <Route path="/about" component={About}/> */}
-                {/* <Route path="/movies/:id" render={({ match }) => <MovieDetail imdbID={match.params.id}/>}/> */}
+                <Route exact path="/" component={Pets}/>
+                <Route path="/pets/:id" component={PetDetail}/>
                 <Redirect to="/"/>
               </Switch>
             </main>
