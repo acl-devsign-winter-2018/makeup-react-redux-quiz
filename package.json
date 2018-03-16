@@ -1,7 +1,7 @@
 {
-  "name": "craft-tracker",
+  "name": "pet-list",
   "version": "1.0.0",
-  "description": "A place to store craft projects and supplies",
+  "description": "A place to keep track of your pets",
   "main": "index.js",
   "scripts": {
     "lint": "eslint src",

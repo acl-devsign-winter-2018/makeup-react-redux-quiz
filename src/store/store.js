@@ -1,11 +1,11 @@
 import { createStore, combineReducers, compose } from 'redux';
 import { loading, error } from '../components/app/reducers';
-import { projects } from '../components/projects/reducers';
+import { pets } from '../components/pets/reducers';
 
 const reducer = combineReducers({
   loading,
   error,
-  projects
+  pets
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

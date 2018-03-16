@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { loadPets, addPet } from './actions';
-import AddForm from '../common/AddForm';
+import AddPet from '../addPet/AddPet';
 import Pet from './Pet';
 
 class Pets extends Component {
@@ -15,7 +15,7 @@ class Pets extends Component {
 
     return (
       <div className="pets">
-        <AddForm onEdit={addPet}/>
+        <AddPet onEdit={addPet}/>
         <Fragment>
           <ul className="pet-list">
             {pets.map(pet => <Pet key={pet.id} {...pet}/>)}
