@@ -5,6 +5,11 @@ import PetItem from './PetItem';
 
 class PetItems extends Component {
 
+  componentDidMount() {
+    const { id, loadPet } = this.props;
+    loadPet(id);
+  }
+
   render() { 
     const { pets } = this.props;
 
