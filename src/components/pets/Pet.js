@@ -9,16 +9,14 @@ class Pet extends Component {
   // }
 
   render() {
-    const { name, completed, date } = this.props;
+    const { name, animal, description } = this.props;
     return (
       <div>
         <Fragment>
           <li className="pet">
-            {completed ? null : 
-              <div>
-                {name} added on {date}
-              </div>
-            }
+            <h3>{name}</h3>
+            <p>{animal}</p>
+            <p>{description}</p>
           </li>
         </Fragment>
       </div>

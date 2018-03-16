@@ -6,15 +6,32 @@ export default class AddForm extends Component {
   
   handleSubmit = (event) => {
     event.preventDefault();
-    this.props.onEdit(event.target.elements.name.value);
+    // this.props.onEdit(event.target.elements.name.value);
+    this.props.onEdit({
+      ...this.state
+    })
+      .then(() => {
+        this.setState({
+          name: '',
+          animal: '',
+          description: ''
+        });
+      });
   };
 
   render() {
+
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="name">
-            <input name="name"/>
+            Pet's name: <input name="name"/>
+          </label>
+          <label htmlFor="animal">
+            Animal: <input name="animal"/>
+          </label>
+          <label htmlFor="description">
+            Description: <input name="description"/>
           </label>
           <button type="submit">Add</button>
         </form>

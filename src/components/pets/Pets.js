@@ -6,9 +6,9 @@ import Pet from './Pet';
 
 class Pets extends Component {
 
-  componentDidMount() {
-    this.props.loadPets();
-  }
+  // componentDidMount() {
+  //   this.props.loadPets();
+  // }
 
   render() {
     const { pets, addPet } = this.props;

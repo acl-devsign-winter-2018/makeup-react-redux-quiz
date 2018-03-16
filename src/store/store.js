@@ -1,4 +1,4 @@
-import { createStore, combineReducers, compose } from 'redux';
+import { createStore, combineReducers } from 'redux';
 import { loading, error } from '../components/app/reducers';
 import { pets } from '../components/pets/reducers';
 
@@ -8,11 +8,9 @@ const reducer = combineReducers({
   pets
 });
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-
 const store = createStore(
   reducer,
-  composeEnhancers
+  window.__REDUX_DEVTOOLS_EXTENSION_ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
 export default store;
