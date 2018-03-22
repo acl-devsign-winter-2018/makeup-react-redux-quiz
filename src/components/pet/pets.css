@@ -1,0 +1,13 @@
+@import '../../styles/variables.css';
+
+.pet-ul {
+  list-style-type: none;
+}
+
+.pet-li {
+  transition: 0.3s ease all;
+
+  &:hover {
+    padding: 0 0 0 0.5rem;
+  }
+}
